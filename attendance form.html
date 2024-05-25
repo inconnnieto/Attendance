@@ -23,19 +23,23 @@
                 
                     <!-- staff names go here-->
                 </select>
-                
+                     <!-- Manual input of time-->
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- display of local time-->
                 <div id="dateTimeDisplay">
                     <p>Date: <span id="displayDate"></span></p>
                     <p>Time: <span id="displayTime"></span></p>
                 </div>
-                
-                <input type="hidden" id="date" name="date">
-                <input type="hidden" id="timeIn" name="timeIn">
-                <input type="hidden" id="timeOut" name="timeOut">
 
-                <button type="button" id="logInButton">IN</button>
-                <br>
-                <button type="button" id="logOutButton">OUT</button>
+                <label for="timeIn">Time In:</label>
+                <input type="time" id="timeIn" name="timeIn" required>
+
+                <label for="timeOut">Time Out:</label>
+                <input type="time" id="timeOut" name="timeOut" required>
+
+                <button type="submit">OK</button>
 
             </form>
         </div>
