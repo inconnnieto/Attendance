@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>KONG Attendance</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Attendance</h1>
+            <form id="attendanceForm">
+                <label for="name">Name:</label>
+                <select id="name" name="name" required>
+                    <option value="" disabled selected>Name</option>
+                    <option value="Fuk">Fook</option>
+                    <option value="Luk">Look</option>
+                    <option value="Sau">Sau</option>
+                    
+                    <option value="Staff 1">Staff 1</option>
+                    <option value="Staff 2">Staff 2</option>
+                    <option value="Staff 3">Staff 3</option>
+                
+                    <!-- staff names go here-->
+                </select>
+                
+                <div id="dateTimeDisplay">
+                    <p>Date: <span id="displayDate"></span></p>
+                    <p>Time: <span id="displayTime"></span></p>
+                </div>
+                
+                <input type="hidden" id="date" name="date">
+                <input type="hidden" id="timeIn" name="timeIn">
+                <input type="hidden" id="timeOut" name="timeOut">
+
+                <button type="button" id="logInButton">IN</button>
+                <br>
+                <button type="button" id="logOutButton">OUT</button>
+
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
